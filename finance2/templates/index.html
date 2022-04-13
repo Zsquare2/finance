@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    indexxxxx
+{% endblock %}
+
+{% block main %}
+<table class="table table-dark table-striped">
+    <thead>
+<tr>
+<th>Stocks</th>
+<th>Name</th>
+<th>Quantity</th>
+<th>LIVE price</th>
+<th>Total value</th>
+<th>Total margin</th>
+</tr>
+</thead>
+{% for symbol in stocks %}
+<tbody>
+<tr>
+    <td>{{ symbol.symbol }}</td>
+    <td>{{ symbol.name }}</td>
+    <td>{{ symbol.quantity }}</td>
+    <td>{{ usd(symbol.live_price) }}</td>
+    <td>{{ usd(symbol.total_value) }}</td>
+    <td>{{ usd(symbol.margin) }}</td>
+</tr>
+</tbody>
+{% endfor %}
+<tr>
+    <td$</td>
+    <td>Cash left</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>{{ cash }}</td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>TOTAL</td>
+    <td>{{ total_balance }}</td>
+    <td></td>
+</tr>
+</table>
+{% endblock %}
+

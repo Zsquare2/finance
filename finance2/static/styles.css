@@ -1,0 +1,96 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xxx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+.bg-new{
+    background-color: #1b3b6f;
+    background-image: url(https://acegif.com/wp-content/gifs/raining-money-10.gif);
+
+}
+.border{
+    border: 3px solid #21295c!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #05386B;
+    font-family: revert;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+:root{
+    background-color: #065a82;!important;
+}
+body {
+    background-color: #065a82 !important;
+    color: #9eb3c2;
+}
+
+
+.table-dark {
+    --bs-table-bg: #21295c;
+    --bs-table-striped-bg: #1b3b6f;
+    --bs-table-striped-color: #afc0cd;
+    color: #e6e6e6;
+
+
+
+}
+.form-control{
+    border: 1px solid #21295c;
+    background-color: #afc0cd;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #21295c;
+    border-color: #21295c;
+    border-radius: 5px;
+}
+select{
+    content: '↓';
+    margin-right: auto!important;
+    margin-left: auto!important;
+    width: auto!important;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #21295c;
+    background-color: #afc0cd;
+    font-family: inherit;
+    color: #6c757d;;
+    border-radius: 5px;
+}
+
+.table-dark{
+    box-shadow: 0px 0px 10px #95c0ff;;
+    border-radius: 5px;
+    overflow:hidden;
+
+}
+
+
+.img1 {
+    height: 110px;
+    float: left;
+    margin-right:-9px;
+}

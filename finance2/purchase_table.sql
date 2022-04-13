@@ -1,0 +1,10 @@
+CREATE TABLE purchase(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER NOT NULL,
+    name TEXT NOT NULL,
+    action TEXT NOT NULL,
+    symbol TEXT NOT NULL,
+    quantity INTEGER NOT NULL,
+    buy_price INTEGER NOT NULL,
+    time TIMESTAMP DEFAULT CURRENT_TIME,
+    FOREIGN KEY(user_id) REFERENCES users(id));

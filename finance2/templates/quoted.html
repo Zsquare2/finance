@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <form action="/quoted" method="post">
+        <h4>You have searched for {{ stock.symbol }}</h4>
+
+<!-- stock is dict with name, price, symbol -->
+<p>
+    {{ stock.name }} ({{ stock.symbol }}) share costs {{ usd(stock.price) }}
+</p>
+    </form>
+{% endblock %}

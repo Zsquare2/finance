@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    indexxxxx
+{% endblock %}
+
+{% block main %}
+<table class="table table-dark table-striped">
+    <thead>
+<tr>
+<th>Action</th>
+<th>Stocks</th>
+<th>Name</th>
+<th>Quantity</th>
+<th>Price</th>
+<th>Date</th>
+</tr>
+</thead>
+{% for symbol in stocks %}
+<tbody>
+<tr>
+    <td>{{ symbol.action }}</td>
+    <td>{{ symbol.symbol }}</td>
+    <td>{{ symbol.name }}</td>
+    <td>{{ symbol.quantity }}</td>
+    <td>{{ usd(symbol.buy_price) }}</td>
+    <td>{{ symbol.time }}</td>
+</tr>
+</tbody>
+{% endfor %}
+</table>
+{% endblock %}
+
